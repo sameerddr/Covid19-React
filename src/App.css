@@ -7,6 +7,13 @@
 
 /* ---------------------------------------Navbar -------------------------- */
 
+.inputtext {
+    padding: 8px 20px;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+}
+
 .nav {
     background-color: burlywood;
     text-align: center;
@@ -16,87 +23,19 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 30px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-}
-
-input:checked+.slider {
-    background-color: #2196f3;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196f3;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-
-/* Rounded sliders */
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-
-/* -------------- */
-
 .dark-mode {
     background-color: black;
     color: white;
-    transition: background-color 0.25s ease-in-out;
-    height: 100%;
 }
 
-.light-mode {
-    background-color: white;
-    color: black;
-    transition: background-color 0.25s ease-in-out;
-    height: 100%;
-}
-
-.switch-container {
-    height: 100px;
+button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
 }
 
 
@@ -105,7 +44,8 @@ input:checked+.slider:before {
 main {
     display: flex;
     justify-content: center;
-    background-color: rgb(131, 131, 143);
+    padding-top: 20px;
+    /* background-color: rgb(131, 131, 143); */
 }
 
 .container {
@@ -117,6 +57,10 @@ main {
     text-align: center;
     line-height: 2;
     text-transform: capitalize;
+}
+
+footer {
+    text-align: center;
 }
 
 
@@ -186,7 +130,6 @@ main {
     }
     main {
         display: flex;
-        background-color: rgb(131, 131, 143);
         flex-wrap: wrap;
     }
     h3 {
@@ -223,7 +166,6 @@ main {
     main {
         display: flex;
         justify-content: center;
-        background-color: rgb(131, 131, 143);
     }
     h3 {
         font-size: 20px;
@@ -259,7 +201,6 @@ main {
     main {
         display: flex;
         justify-content: center;
-        background-color: rgb(131, 131, 143);
     }
     h3 {
         font-size: 20px;
@@ -295,7 +236,6 @@ main {
     main {
         display: flex;
         justify-content: center;
-        background-color: rgb(131, 131, 143);
     }
     h3 {
         font-size: 20px;
@@ -328,7 +268,6 @@ main {
     main {
         display: flex;
         justify-content: center;
-        background-color: rgb(131, 131, 143);
     }
     h3 {
         font-size: 20px;
